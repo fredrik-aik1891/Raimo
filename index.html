@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primär SEO -->
+<title>Raimo — IT och AI på ett begripligt sätt | Stockholm</title>
+<meta name="description" content="Raimo hjälper mindre och medelstora företag att förstå, testa och växa med AI på ett tryggt sätt. Stockholmsbaserat team. Boka ett förutsättningslöst första möte.">
+<meta name="keywords" content="AI för företag, AI-konsult Stockholm, AI-strategi, AI-implementation, automation, IT-konsult, små och medelstora företag, AI hälsa, AI musik, AI sport">
+<meta name="author" content="Raimo">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="language" content="Swedish">
+<link rel="canonical" href="https://raimo.se/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Raimo">
+<meta property="og:title" content="Raimo — IT och AI på ett begripligt sätt">
+<meta property="og:description" content="Vi hjälper mindre och medelstora företag att förstå, testa och växa med AI tryggt och utan krångel. Stockholmsbaserat team.">
+<meta property="og:url" content="https://raimo.se/">
+<meta property="og:image" content="https://raimo.se/images/raimo-mascot.png">
+<meta property="og:image:alt" content="Raimos maskot">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raimo — IT och AI på ett begripligt sätt">
+<meta name="twitter:description" content="Vi hjälper mindre och medelstora företag att förstå, testa och växa med AI tryggt och utan krångel.">
+<meta name="twitter:image" content="https://raimo.se/images/raimo-mascot.png">
+
+<!-- Geo -->
+<meta name="geo.region" content="SE-AB">
+<meta name="geo.placename" content="Stockholm">
+<meta name="theme-color" content="#1052F5">
+
+<link rel="icon" type="image/svg+xml" href="images/raimo-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1052F5;
+  --blue-dark:#0d44cc;
+  --ink:#0E0E10;
+  --bg:#f9f9f9;
+  --bg-soft:#F4F3F2;
+  --white:#FFFFFF;
+  --muted:#5C5C60;
+  --line:rgba(14,14,16,0.10);
+  --maxw:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+a{color:inherit;text-decoration:none}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:20px;letter-spacing:-0.02em}
+.brand img{display:block}.brand{gap:9px}
+.nav-links{display:flex;align-items:center;gap:32px;font-size:15px}
+.nav-links a{color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:500;padding:11px 20px;border-radius:8px;font-size:15px;transition:background .15s,transform .15s}
+.btn:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.btn-lg{padding:15px 28px;font-size:17px}
+.nav .btn,.nav .btn:hover{padding:9px 18px;font-size:14px;color:#fff}
+@media(max-width:760px){.nav-links a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:96px 0 88px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);margin-bottom:22px}
+h1{font-size:58px;font-weight:600;letter-spacing:-0.03em;line-height:1.04;margin-bottom:24px}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:30em;margin-bottom:34px}
+.hero-art{display:flex;justify-content:center;align-items:center}
+.hero-art img{width:100%;max-width:300px;height:auto;display:block}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:8px}
+  .hero-art{order:-1;justify-content:flex-start;margin-bottom:8px}
+  .hero-art img{max-width:140px}
+  h1{font-size:42px}
+  .hero{padding:56px 0 56px}
+}
+
+/* sections */
+section{padding:84px 0}
+.section-head{max-width:34em;margin-bottom:52px}
+.section-head .eyebrow{margin-bottom:14px}
+h2{font-size:38px;font-weight:600;letter-spacing:-0.025em;line-height:1.1;margin-bottom:16px}
+.section-head p{font-size:18px;color:var(--muted)}
+h3{font-size:21px;font-weight:600;letter-spacing:-0.01em;margin-bottom:10px}
+
+.band-soft{background:var(--bg-soft)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}
+.step{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px 28px;position:relative}
+.step .num{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;background:var(--blue);color:#fff;font-weight:600;font-size:16px;margin-bottom:20px}
+.step p{color:var(--muted);font-size:15.5px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* service cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 30px;transition:transform .18s,box-shadow .18s,border-color .18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(16,82,245,0.08);border-color:rgba(16,82,245,0.3)}
+.card .ic{width:46px;height:46px;border-radius:12px;background:rgba(16,82,245,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.card .ic svg{width:24px;height:24px;stroke:var(--blue)}
+.card p{color:var(--muted);font-size:15.5px}
+@media(max-width:760px){.cards{grid-template-columns:1fr}}
+
+/* industries */
+.ind{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--white)}
+.ind > div{padding:38px 32px;border-right:1px solid var(--line)}
+.ind > div:last-child{border-right:none}
+.ind .tag{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+.ind h3{font-size:19px;margin-bottom:8px}
+.ind p{color:var(--muted);font-size:15px}
+@media(max-width:760px){.ind{grid-template-columns:1fr}.ind > div{border-right:none;border-bottom:1px solid var(--line)}.ind > div:last-child{border-bottom:none}}
+
+/* network strip */
+.network{background:var(--ink);border-radius:20px;padding:56px 48px;color:#fff;text-align:center}
+.network h2{color:#fff}
+.network p{color:#A8A8AC;font-size:18px;max-width:38em;margin:0 auto}
+
+/* cta */
+.cta{text-align:center;padding:96px 0}
+.cta h2{font-size:44px;margin-bottom:18px}
+.cta p{font-size:19px;color:var(--muted);max-width:32em;margin:0 auto 32px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer .brand{font-size:17px;color:var(--ink)}
+footer .brand img{width:24px}
+</style>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://raimo.se/#organization",
+      "name": "Raimo",
+      "description": "Raimo hjälper mindre och medelstora företag att förstå, testa och växa med AI på ett tryggt sätt.",
+      "url": "https://raimo.se/",
+      "email": "hej@raimo.se",
+      "logo": "https://raimo.se/images/raimo-icon.svg",
+      "image": "https://raimo.se/images/raimo-mascot.png",
+      "areaServed": "SE",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Stockholm",
+        "addressCountry": "SE"
+      },
+      "knowsAbout": ["Artificiell intelligens", "AI-strategi", "Automation", "IT-konsulting"],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI i era befintliga system" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Skräddarsydda AI-lösningar" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategi och vägledning" } }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://raimo.se/#website",
+      "url": "https://raimo.se/",
+      "name": "Raimo",
+      "inLanguage": "sv-SE",
+      "publisher": { "@id": "https://raimo.se/#organization" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Raimo – startsida"><img src="images/raimo-icon.svg" alt="Raimo logotyp" width="30" height="30" style="display:block"><span>raimo</span></a>
+    <div class="nav-links">
+      <a href="#sa-jobbar-vi">Så jobbar vi</a>
+      <a href="#tjanster">Tjänster</a>
+      <a href="#branscher">Branscher</a>
+      <a href="#kontakt" class="btn">Boka möte</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">IT &amp; AI för mindre och medelstora företag</span>
+        <h1>IT och AI på ett begripligt sätt.</h1>
+        <p class="lead">Från strategi till funktion och design. Vi hjälper er förstå, testa och växa med AI tryggt och utan krångel.</p>
+        <a href="#kontakt" class="btn btn-lg">Prata AI med oss →</a>
+      </div>
+      <div class="hero-art"><img src="images/raimo-mascot.png" alt="Raimos maskot – Raimo, AI- och IT-partner i Stockholm" width="666" height="1622" fetchpriority="high"></div>
+    </div>
+  </div>
+</header>
+
+<section class="band-soft" id="om">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Vilka vi är</span>
+      <h2>Ett litet, nära team. Tung kompetens bakom.</h2>
+      <p>Vi är Raimo. Ett Stockholmsbaserat team med rötterna i strategiskt tänkande, visuell design och finsk sisu. Vi pratar klarspråk, skippar buzzwords och ser till att tekniken faktiskt gör nytta i er vardag. Genom vårt nätverk av underkonsulter kopplar vi in rätt specialist för varje uppdrag.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sa-jobbar-vi">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Så jobbar vi</span>
+      <h2>Tryggt, i tre steg.</h2>
+      <p>Ni behöver inte veta var ni ska börja. Det är vårt jobb.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Kartläggning</h3>
+        <p>Vi börjar med att förstå er vardag och era system. Var finns tidstjuvarna, var kan AI faktiskt göra skillnad, och vad är inte värt besväret. Ni får en ärlig bild innan en krona spenderas.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Test i liten skala</h3>
+        <p>Vi bygger något litet och konkret som ni kan ta på. Lågt risk, snabbt resultat, lätt att utvärdera. Funkar det inte skalar vi inte upp det.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Väx med det som fungerar</h3>
+        <p>Det som bevisar sig får växa in i verksamheten på riktigt. Vi finns kvar, justerar och bygger vidare i den takt ni är bekväma med.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-soft" id="tjanster">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Tjänster</span>
+      <h2>Tre vägar in.</h2>
+      <p>Oftast börjar vi smått i det ni redan har. Ibland bygger vi nytt. Alltid med en plan ni känner er trygga med.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.6"/><rect x="3" y="3" width="4" height="4" rx="1"/><rect x="17" y="3" width="4" height="4" rx="1"/><rect x="3" y="17" width="4" height="4" rx="1"/><rect x="17" y="17" width="4" height="4" rx="1"/><path d="M10.2 10.2 7 7M13.8 10.2 17 7M10.2 13.8 7 17M13.8 13.8 17 17"/></svg></div>
+        <h3>AI i era befintliga system</h3>
+        <p>Ni behöver inte byta allt. Oftast börjar vi med att koppla smarta AI-lösningar direkt till de verktyg ni redan använder, affärssystem, kundtjänst, bokning, dokumenthantering. Mindre friktion, snabbare nytta.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12.5" width="6.5" height="6.5" rx="1.4"/><rect x="13.5" y="12.5" width="6.5" height="6.5" rx="1.4"/><rect x="8.75" y="4" width="6.5" height="6.5" rx="1.4"/></svg></div>
+        <h3>Skräddarsydda AI-lösningar</h3>
+        <p>När det färdiga inte räcker bygger vi nytt från grunden. Egna modeller, automationsflöden och interna verktyg formade efter exakt det ni behöver.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.4 13.4 8.5 15.5 10.6 10.6 Z"/></svg></div>
+        <h3>Strategi och vägledning</h3>
+        <p>Den svåraste frågan är ofta inte tekniken, utan var man ska börja. Vi hjälper er prioritera, förstå riskerna och lägga en plan ni känner er trygga med.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="branscher">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Branscher vi kan</span>
+      <h2>Specialistkunskap där den behövs.</h2>
+      <p>Genom vårt nätverk av underkonsulter har vi extra djup inom tre områden.</p>
+    </div>
+    <div class="ind">
+      <div>
+        <span class="tag">Hälsa</span>
+        <h3>Mer tid till vården</h3>
+        <p>Journal- och bokningssystem, patientflöden och regelefterlevnad. AI som avlastar administration så mer tid blir kvar till det som räknas.</p>
+      </div>
+      <div>
+        <span class="tag">Musik</span>
+        <h3>Branschen inifrån</h3>
+        <p>Katalog och metadata, rättigheter, distribution och marknadsföring. Vi kan musikbranschen och vet var tekniken gör skillnad.</p>
+      </div>
+      <div>
+        <span class="tag">Sport</span>
+        <h3>Beslut på siffror</h3>
+        <p>Prestations- och medlemsdata, evenemangshantering och analys. Underlag byggt på data i stället för magkänsla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="network">
+      <h2>Klarspråk, inte buzzwords.</h2>
+      <p>Vi förklarar vad vi gör, varför, och vad det kostar, innan vi sätter igång. Ingen teknikdimridå, inget säljsnack. Bara teknik som gör nytta i er vardag.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta band-soft" id="kontakt">
+  <div class="wrap">
+    <span class="eyebrow">Boka ett första möte</span>
+    <h2>Nyfiken på vad AI kan göra för er?</h2>
+    <p>Boka ett förutsättningslöst första möte. Vi lyssnar, ställer frågor och ger en ärlig bild. Inget säljsnack.</p>
+    <a href="mailto:hej@raimo.se" class="btn btn-lg">Boka ett första möte →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Raimo – startsida"><img src="images/raimo-icon.svg" alt="Raimo logotyp" width="24" height="24" style="display:block"><span>raimo</span></a>
+    <div>Stockholm · hej@raimo.se</div>
+    <div>© 2026 Raimo</div>
+  </div>
+</footer>
+
+</body>
+</html>

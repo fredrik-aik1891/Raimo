@@ -20,14 +20,17 @@
 <meta property="og:title" content="Raimo — IT och AI på ett begripligt sätt">
 <meta property="og:description" content="Vi hjälper mindre och medelstora företag att förstå, testa och växa med AI tryggt och utan krångel. Stockholmsbaserat team.">
 <meta property="og:url" content="https://raimo.se/">
-<meta property="og:image" content="https://raimo.se/images/raimo-mascot.png">
-<meta property="og:image:alt" content="Raimos maskot">
+<meta property="og:image" content="https://raimo.se/images/raimo-og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Raimo – IT och AI på ett begripligt sätt">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Raimo — IT och AI på ett begripligt sätt">
 <meta name="twitter:description" content="Vi hjälper mindre och medelstora företag att förstå, testa och växa med AI tryggt och utan krångel.">
-<meta name="twitter:image" content="https://raimo.se/images/raimo-mascot.png">
+<meta name="twitter:image" content="https://raimo.se/images/raimo-og.png">
 
 <!-- Geo -->
 <meta name="geo.region" content="SE-AB">
@@ -35,6 +38,10 @@
 <meta name="theme-color" content="#1052F5">
 
 <link rel="icon" type="image/svg+xml" href="images/raimo-icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="preload" as="image" href="images/raimo-mascot.webp" type="image/webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -67,6 +74,7 @@ a{color:inherit;text-decoration:none}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:20px;letter-spacing:-0.02em}
 .brand img{display:block}.brand{gap:9px}
+@media(min-width:761px){.nav .brand img{width:40px;height:40px}}
 .nav-links{display:flex;align-items:center;gap:32px;font-size:15px}
 .nav-links a{color:var(--muted);transition:color .15s}
 .nav-links a:hover{color:var(--ink)}
@@ -86,7 +94,7 @@ h1{font-size:58px;font-weight:600;letter-spacing:-0.03em;line-height:1.04;margin
 .hero-art img{width:100%;max-width:300px;height:auto;display:block}
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr;gap:8px}
-  .hero-art{order:-1;justify-content:flex-start;margin-bottom:8px}
+  .hero-art{order:-1;justify-content:center;margin-bottom:8px}
   .hero-art img{max-width:140px}
   h1{font-size:42px}
   .hero{padding:56px 0 56px}
@@ -203,10 +211,10 @@ footer .brand img{width:24px}
       <div>
         <span class="eyebrow">IT &amp; AI för mindre och medelstora företag</span>
         <h1>IT och AI på ett begripligt sätt.</h1>
-        <p class="lead">Från strategi till funktion och design. Vi hjälper er förstå, testa och växa med AI tryggt och utan krångel.</p>
+        <p class="lead">Från strategi till funktion och design. Som AI-konsulter i Stockholm hjälper vi mindre och medelstora företag förstå, testa och växa med AI – tryggt och utan krångel.</p>
         <a href="#kontakt" class="btn btn-lg">Prata AI med oss →</a>
       </div>
-      <div class="hero-art"><img src="images/raimo-mascot.png" alt="Raimos maskot – Raimo, AI- och IT-partner i Stockholm" width="666" height="1622" fetchpriority="high"></div>
+      <div class="hero-art"><picture><source srcset="images/raimo-mascot.webp" type="image/webp"><img src="images/raimo-mascot.png" alt="Raimos maskot – Raimo, AI- och IT-partner i Stockholm" width="666" height="1622" fetchpriority="high"></picture></div>
     </div>
   </div>
 </header>

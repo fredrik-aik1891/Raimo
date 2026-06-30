@@ -115,6 +115,7 @@ h3{font-size:21px;font-weight:600;letter-spacing:-0.01em;margin-bottom:10px}
 #tjanster{background:#fbf6f0}
 #branscher{background:#EEF3FE}
 #kontakt{background:#fbf6f0}
+#faq{background:#FFFFFF}
 
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}
@@ -146,6 +147,16 @@ h3{font-size:21px;font-weight:600;letter-spacing:-0.01em;margin-bottom:10px}
 .network{background:var(--blue);border-radius:20px;padding:56px 48px;color:#fff;text-align:center}
 .network h2{color:#fff}
 .network p{color:rgba(255,255,255,0.85);font-size:18px;max-width:38em;margin:0 auto}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:0 26px;transition:border-color .15s}
+.faq details[open]{border-color:rgba(16,82,245,0.3)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:17px;padding:22px 0}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:26px;font-weight:400;line-height:1;color:var(--blue)}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{color:var(--muted);font-size:15.5px;margin:0;padding:0 0 24px;max-width:62ch}
 
 /* cta */
 .cta{text-align:center;padding:96px 0}
@@ -197,6 +208,21 @@ footer .brand img{height:22px;width:auto}
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Vi har aldrig jobbat med AI – var börjar vi?", "acceptedAnswer": { "@type": "Answer", "text": "Hos oss, inte hos er. Vi börjar med en kartläggning av er vardag och era system: var finns tidstjuvarna, var gör AI verklig nytta och vad är inte värt besväret. Ni får en ärlig bild innan en krona spenderas, och sedan testar vi något litet och konkret. Man behöver inte kunna något om tekniken för att komma igång." } },
+    { "@type": "Question", "name": "Alla pratar om ”AI-agenter” – är det något för oss?", "acceptedAnswer": { "@type": "Answer", "text": "Kanske. En AI-agent är AI som utför hela arbetsflöden åt er, inte bara svarar på frågor: hanterar ordrar, sammanställer underlag, sköter rutinärenden. Det är den stora rörelsen 2026, men poängen är inte att ha en agent – det är att lösa ett konkret problem. Vi börjar med en process som tar tid idag och bygger därifrån." } },
+    { "@type": "Question", "name": "Hur påverkas vi av EU:s AI Act?", "acceptedAnswer": { "@type": "Answer", "text": "Från 2 augusti 2026 är sanktionerna i AI-förordningen fullt aktiva, så det är värt att ha koll. Det mesta som mindre och medelstora företag använder hamnar i låg risk, men ni behöver veta vilka AI-verktyg ni faktiskt har och vara öppna med när AI används. Har ni redan jobbat med GDPR är ni en bra bit på väg – vi hjälper er inventera och hålla rätt sida om reglerna." } },
+    { "@type": "Question", "name": "Stannar vår data inom EU och är den säker?", "acceptedAnswer": { "@type": "Answer", "text": "Det ska den göra. Vi bygger lösningar med datasäkerhet och GDPR som utgångspunkt, inte som efterhandskonstruktion, och väljer leverantörer och drift som håller er data där den hör hemma. Er data är er – inte träningsmaterial åt någon annan." } },
+    { "@type": "Question", "name": "Vad kostar det att komma igång?", "acceptedAnswer": { "@type": "Answer", "text": "Mindre än de flesta tror. Vi börjar nyktert med något litet och avgränsat med låg risk, så att ni kan utvärdera nyttan innan ni skalar upp. Vi säger vad saker kostar och varför innan vi sätter igång – inga överraskningar på fakturan." } },
+    { "@type": "Question", "name": "Hur snabbt ser vi resultat?", "acceptedAnswer": { "@type": "Answer", "text": "En liten pilot kan vara på plats på några veckor, och nyttan brukar synas inom månader snarare än år. Vi mäter mot något konkret – sparad tid, färre fel, nöjdare kunder – så att ni ser om det fungerar. Gör det inte det skalar vi inte upp det." } },
+    { "@type": "Question", "name": "Ersätter AI våra medarbetare?", "acceptedAnswer": { "@type": "Answer", "text": "Nej. AI ska arbeta för er, inte ta över. Det vi automatiserar är oftast det tråkiga och repetitiva, så att tid och kompetens blir kvar till det människor är bäst på. Ni behåller kontrollen." } }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -207,6 +233,7 @@ footer .brand img{height:22px;width:auto}
       <a href="#sa-jobbar-vi">Så jobbar vi</a>
       <a href="#tjanster">Tjänster</a>
       <a href="#branscher">Branscher</a>
+      <a href="#faq">Frågor</a>
       <a href="#kontakt" class="btn">Boka möte</a>
     </div>
   </div>
@@ -325,6 +352,46 @@ footer .brand img{height:22px;width:auto}
     <div class="network">
       <h2>Klarspråk, inte buzzwords.</h2>
       <p>Vi förklarar vad vi gör, varför, och vad det kostar, innan vi sätter igång. Ingen teknikdimridå, inget säljsnack. Bara teknik som gör nytta i er vardag.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Vanliga frågor</span>
+      <h2>Frågor vi ofta får.</h2>
+      <p>Kort och rakt om AI, kostnad, regler och var ni börjar.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Vi har aldrig jobbat med AI – var börjar vi?</summary>
+        <p>Hos oss, inte hos er. Vi börjar med en kartläggning av er vardag och era system: var finns tidstjuvarna, var gör AI verklig nytta och vad är inte värt besväret. Ni får en ärlig bild innan en krona spenderas, och sedan testar vi något litet och konkret. Man behöver inte kunna något om tekniken för att komma igång.</p>
+      </details>
+      <details>
+        <summary>Alla pratar om ”AI-agenter” – är det något för oss?</summary>
+        <p>Kanske. En AI-agent är AI som utför hela arbetsflöden åt er, inte bara svarar på frågor: hanterar ordrar, sammanställer underlag, sköter rutinärenden. Det är den stora rörelsen 2026, men poängen är inte att ha en agent – det är att lösa ett konkret problem. Vi börjar med en process som tar tid idag och bygger därifrån.</p>
+      </details>
+      <details>
+        <summary>Hur påverkas vi av EU:s AI Act?</summary>
+        <p>Från 2 augusti 2026 är sanktionerna i AI-förordningen fullt aktiva, så det är värt att ha koll. Det mesta som mindre och medelstora företag använder hamnar i låg risk, men ni behöver veta vilka AI-verktyg ni faktiskt har och vara öppna med när AI används. Har ni redan jobbat med GDPR är ni en bra bit på väg – vi hjälper er inventera och hålla rätt sida om reglerna.</p>
+      </details>
+      <details>
+        <summary>Stannar vår data inom EU och är den säker?</summary>
+        <p>Det ska den göra. Vi bygger lösningar med datasäkerhet och GDPR som utgångspunkt, inte som efterhandskonstruktion, och väljer leverantörer och drift som håller er data där den hör hemma. Er data är er – inte träningsmaterial åt någon annan.</p>
+      </details>
+      <details>
+        <summary>Vad kostar det att komma igång?</summary>
+        <p>Mindre än de flesta tror. Vi börjar nyktert med något litet och avgränsat med låg risk, så att ni kan utvärdera nyttan innan ni skalar upp. Vi säger vad saker kostar och varför innan vi sätter igång – inga överraskningar på fakturan.</p>
+      </details>
+      <details>
+        <summary>Hur snabbt ser vi resultat?</summary>
+        <p>En liten pilot kan vara på plats på några veckor, och nyttan brukar synas inom månader snarare än år. Vi mäter mot något konkret – sparad tid, färre fel, nöjdare kunder – så att ni ser om det fungerar. Gör det inte det skalar vi inte upp det.</p>
+      </details>
+      <details>
+        <summary>Ersätter AI våra medarbetare?</summary>
+        <p>Nej. AI ska arbeta för er, inte ta över. Det vi automatiserar är oftast det tråkiga och repetitiva, så att tid och kompetens blir kvar till det människor är bäst på. Ni behåller kontrollen.</p>
+      </details>
     </div>
   </div>
 </section>
